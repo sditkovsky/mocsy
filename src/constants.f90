@@ -449,8 +449,8 @@ SUBROUTINE constants(K0, K1, K2, Kb, Kw, Ks, Kf, Kspc, Kspa,  &
            PRINT *, "optGAS must be 'Pzero', 'Ppot', or 'Pinsitu'"
            STOP
         ENDIF
-        tmp = 9345.17d0/tk0 - 60.2409d0 + 23.3585d0 * LOG(tk0/100.0d0)
-        nK0we74 = tmp + s*(0.023517d0 - 0.00023656d0*tk0 + 0.0047036e-4_r8*tk0*tk0)
+        tmp = 9050.69d0/tk0 - 58.0931d0 + 22.2940d0 * LOG(tk0/100.0d0)
+        nK0we74 = tmp + s*(0.027766d0 - 0.00025888d0*tk0 + 0.0050578e-4_r8*tk0*tk0)
         K0(i) = EXP(nK0we74)
 
 !       K1 = [H][HCO3]/[H2CO3]
